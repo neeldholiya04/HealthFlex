@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, onConfirm, title, message }) => {
       setIsAnimatingOut(true);
       const timer = setTimeout(() => {
         setIsAnimatingOut(false);
-      }, 300); // Match this with the duration of the fade-out animation
+      }, 300);
       return () => clearTimeout(timer);
     }
   }, [isOpen]);
